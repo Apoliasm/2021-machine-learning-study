@@ -1,0 +1,6 @@
+how to use support vector machine. 
+1. load train data and test data so that my code separate which category is correct.
+2. By using gridsearchSV, find optimal cost and gamma ( cost = how many use uncorrect data, gamma = vector's sensitive curve)
+ㄴ2.1 . By making plot imported by matplotlib, show plot graph of each cost and gamma.
+3. Use test data to check how much data can predict correctly,
+ㄴstudy data's True/False positive/negative and data's accuracy,recall,precision and f1 score -> can find other type of average.

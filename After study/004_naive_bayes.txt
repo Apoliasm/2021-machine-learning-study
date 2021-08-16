@@ -1,0 +1,15 @@
+naive_bayes 
+treat probability event as a naive(단순한) event and test veriable type of data
+, and choose the highest probability with bayes_theory
+
+first input data to train and test
+second. treat characteristics classifying  data as naive event (Vectorizing(text data to numeric data) all words)
+third. test it
+
+three type of naive bayes
+first. Gaussian naive_bayes
+ㄴif data is type of gausssian distribution(정규분포)
+second. Bernoulli naive_bayes
+ㄴif data is type of Bernooulli distribution(discrete type (0,1))
+third. Multinomial naive_bayes
+ㄴif data is type of Multinomial(다항분포:특정 사건이 독립일때 몇번 나타나는지)
