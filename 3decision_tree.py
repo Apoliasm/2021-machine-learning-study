@@ -93,7 +93,8 @@ from sklearn import tree                    #make decision tree by using sklearn
 
 from sklearn import preprocessing
 
-le = preprocessing.LabelEncoder()           #preprocessing(데이터 전처리) : alter categorical data to numerical data to use learning 
+le = preprocessing.LabelEncoder()           
+#preprocessing(데이터 전처리) : alter categorical data to numerical data to use learning 
 y_encoded = le.fit_transform(y_train) 
 
 #clf = tree.DecisionTreeClassifier(random_state=35).fit(X_train, y_encoded) 

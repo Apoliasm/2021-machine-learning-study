@@ -1,0 +1,36 @@
+앙상블 기법: 다양한 분류 모델(naive_bayes,decision_tree,svm...)을 조합해 단일 모델보다 더 나은 성능을 내게 함
+ㄴ배깅 bagging:한 가지 분류모델을 여러가지로 만들어 다른 학습 데이터로 학습(bootstrap)
+             그리고 동일한 테스트 데이터에 대한 서로 다른 예측값을 투표로 가장 높은 값을 선택(aggregating)
+                                aggregate : n\something formed by adding together several amounts or thing
+                                             v\to combine into a single group or total
+            과대적합(Overfitting):학습 데이터는 높은 정확도를 나타내지만 학습 데이터에 없는 데이터는 정확도가 낮게 나옴.
+             분산(variance):지도학습에서 예측한 자기들끼리 흩어짐
+             편향(bias) : 지도학습에서 예측한 값이 정답에서 멂                     
+        
+        부트스트랩(bootstrap) :  분산은 높고, 편향은 적은 데이터(과대적합된 데이터)를 조금은 편향되도록 샘플링
+        aggregating: 투표로 정함
+        ㄴhard_voting: 여러개의 분류 모델중 가장 많이 나온 분류값을 선택
+            soft_voting: 각 분류 모델마다의 분류값이 나올 확률을 return, 각 모델의 분류값 확률을 더해 가장 높은 값선택
+random_forest:여러가지의 decision_tree를 bagging해서 예측을 실행.
+            일반적인 decision_tree은 최적의 특징을 찾아 tree를 나누지만,
+            random_forest은 각 노드의 데이터를 샘플링해 일부 데이터를 지운다.->편향을 높여 과대적합을 줄임
+
+부스팅:앙상블 기법중 하나
+        배깅은 서로 다른 분류기를 병렬로 학습,
+        부스팅은 동일한 알고리즘의 분류기를 순차적으로 학습해 여러개의 분류기로 만들어 가중투표 진행
+        ㄴ순차적 학습:여러번의 decision_tree에서 순차적으로 학습데이터를 보강해 여러개의 분류기를 만듦.
+          가중투표: 분류기에 따라서 aggregate의 비중치가 다름(정확도가 더 높으면 그 분류기에 더 가중치를 둠)
+
+
+AFTER STUDY
+ensemble : use various train_model with same data,and aggregate their accuracy, so show better result than single model.
+first: input data and split it to train_feature,label and test_feature,label
+second: import various single train_model and vote(soft and hard)
+
+
+
+
+
+
+
+                                
