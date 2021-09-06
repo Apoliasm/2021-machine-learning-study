@@ -1,0 +1,8 @@
+import beautifulsoup
+first load http script 
+ㄴ import request
+    req.urlopen(decode = 'euc-kr')   
+    to read 한글 -> need to set 한글 decode (euc-kr,utf -8) ->utf-8 can decode other language(including hangil)
+second extract necessary data using beautifulsoup.select or beautifulsoup.find
+ㄴ <t class = "classname"> ->  select("tagname.classname")
+then use it
